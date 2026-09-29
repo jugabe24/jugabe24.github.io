@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Juan Antonio Galindo Benítez · Portfolio</title>
+  <meta name="description" content="Portfolio y CV de Juan Antonio Galindo Benítez, estudiante del doble grado en Ingeniería Informática y Matemáticas (mención en Computación y Sistemas Inteligentes)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a href="#top" class="logo">&lt;jag<span>/</span>&gt;</a>
+    <nav>
+      <a href="#sobre-mi">sobre_mi</a>
+      <a href="#formacion">formacion</a>
+      <a href="#skills">skills</a>
+      <a href="#proyectos">proyectos</a>
+      <a href="#contacto">contacto</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="prompt">$ whoami</p>
+      <h1>Juan Antonio<br /><span class="lime glitch" data-text="Galindo Benítez">Galindo Benítez</span></h1>
+      <p class="typed-line">
+        <span class="lime">&gt;</span> <span id="typed"></span><span class="cursor">▍</span>
+      </p>
+      <p class="lead">
+        Estudiante de 5.º y último curso del <strong>Doble Grado en Ingeniería Informática y Matemáticas</strong>,
+        con mención en <strong>Computación y Sistemas Inteligentes</strong>.
+      </p>
+      <div class="cta">
+        <a class="btn primary" href="#proyectos">ver_proyectos()</a>
+        <a class="btn" href="#contacto">hablemos.sh</a>
+        <a class="btn ghost" href="cv.pdf" download>descargar_cv.pdf</a>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi">
+      <h2><span class="lime">01.</span> sobre_mi</h2>
+      <div class="grid two">
+        <div class="card terminal">
+          <div class="term-bar"><i></i><i></i><i></i><span>perfil.json</span></div>
+<pre><code>{
+  <span class="k">"nombre"</span>: <span class="s">"Juan Antonio Galindo Benítez"</span>,
+  <span class="k">"estudios"</span>: <span class="s">"Doble Grado Ing. Informática + Matemáticas"</span>,
+  <span class="k">"curso"</span>: <span class="n">5</span>,
+  <span class="k">"mencion"</span>: <span class="s">"Computación y Sistemas Inteligentes"</span>,
+  <span class="k">"estado"</span>: <span class="s">"terminando la carrera"</span>,
+  <span class="k">"busca"</span>: <span class="s">"primeras oportunidades"</span>
+}</code></pre>
+        </div>
+        <div class="text">
+          <p>
+            Me muevo entre dos mundos que se complementan: las <strong>matemáticas</strong>, que me dan
+            el rigor para entender por qué funcionan las cosas, y la <strong>informática</strong>, que me
+            permite convertir esas ideas en sistemas que hacen cosas de verdad.
+          </p>
+          <p>
+            Mi mención en <strong>Computación y Sistemas Inteligentes</strong> me ha acercado a la
+            inteligencia artificial, el aprendizaje automático y la algoritmia desde una base
+            matemática sólida.
+          </p>
+          <p class="muted">// Ahora mismo: cerrando la carrera y buscando dónde seguir aprendiendo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMACION -->
+    <section id="formacion">
+      <h2><span class="lime">02.</span> formacion</h2>
+      <div class="timeline">
+        <article class="item">
+          <span class="dot"></span>
+          <div class="card">
+            <span class="tag">en curso · 5.º curso</span>
+            <h3>Doble Grado en Ingeniería Informática y Matemáticas</h3>
+            <p class="muted">Mención en Computación y Sistemas Inteligentes</p>
+            <ul class="chips">
+              <li>Inteligencia artificial</li>
+              <li>Aprendizaje automático</li>
+              <li>Algoritmia</li>
+              <li>Álgebra</li>
+              <li>Análisis matemático</li>
+              <li>Probabilidad y estadística</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2><span class="lime">03.</span> skills</h2>
+      <div class="grid three">
+        <div class="card skill">
+          <h3>💻 Computación</h3>
+          <p>Estructuras de datos, complejidad, diseño y análisis de algoritmos.</p>
+        </div>
+        <div class="card skill">
+          <h3>🧠 Sistemas inteligentes</h3>
+          <p>IA, machine learning y modelos que aprenden de los datos.</p>
+        </div>
+        <div class="card skill">
+          <h3>∑ Matemáticas</h3>
+          <p>Álgebra, cálculo, estadística y modelización formal.</p>
+        </div>
+      </div>
+      <!-- TODO: añade aquí tus lenguajes y herramientas reales (Python, Java, C, Git...) -->
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos">
+      <h2><span class="lime">04.</span> proyectos</h2>
+      <div class="grid three">
+        <!-- TODO: sustituye estas tarjetas por tus proyectos reales, con enlace a su repo -->
+        <a class="card project" href="https://github.com/" target="_blank" rel="noopener">
+          <span class="tag">TODO</span>
+          <h3>Tu primer proyecto</h3>
+          <p>Describe en una línea qué hace y qué problema resuelve.</p>
+          <span class="stack">python · ml</span>
+        </a>
+        <a class="card project" href="https://github.com/" target="_blank" rel="noopener">
+          <span class="tag">TODO</span>
+          <h3>Trabajo de la mención</h3>
+          <p>Algún proyecto de sistemas inteligentes o computación.</p>
+          <span class="stack">ia · algoritmia</span>
+        </a>
+        <a class="card project" href="https://github.com/" target="_blank" rel="noopener">
+          <span class="tag">TODO</span>
+          <h3>Trabajo Fin de Grado</h3>
+          <p>Cuando lo tengas definido, cuéntalo aquí.</p>
+          <span class="stack">tfg</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2><span class="lime">05.</span> contacto</h2>
+      <div class="card contact">
+        <p>¿Tienes una oportunidad, un proyecto o solo quieres charlar de mates e IA?</p>
+        <div class="cta">
+          <!-- TODO: cambia estos tres enlaces por los tuyos -->
+          <a class="btn primary" href="mailto:TU_CORREO@ejemplo.com">correo</a>
+          <a class="btn" href="https://github.com/TU_USUARIO" target="_blank" rel="noopener">github</a>
+          <a class="btn" href="https://www.linkedin.com/in/TU_PERFIL" target="_blank" rel="noopener">linkedin</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Juan Antonio Galindo Benítez · hecho a mano con HTML, CSS y JS <span class="lime">;)</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
